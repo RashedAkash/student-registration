@@ -1,6 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server"
 
+// Creating API for single student registration.
 export const POST = async (req, res) => {
   try {
     const prisma = new PrismaClient();
@@ -19,3 +20,4 @@ export const POST = async (req, res) => {
    return NextResponse.json(error) 
   }
 }
+
